@@ -1,0 +1,19 @@
+python notes:
+
+read file:
+
+	path = '/root/days.txt'
+	f = open(path, 'r')
+	f.read()
+	
+view opened files:
+
+	import psutil
+	p = psutil.Process()
+	p.open_files()
+	
+copy files:
+	
+	from shutil import copyfile
+	copyfile(path, '/root/newfile.txt')
+
